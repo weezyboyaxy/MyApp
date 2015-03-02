@@ -1,16 +1,15 @@
 {% extends 'layout.html' %}
- {% block title %}My Page{% endblock %} 
- {% block head %} 
- <h1> {{message}} </h1>
- <h2> {{error.status}} </h2>
- <pre> {{#{error.stack}}} </pre>
- {% parent %} 
- {% endblock %} 
- 
- {% block content %}
-This is just an awesome page.
 
+{% block title %}
+	My Page
+{% endblock %} 
+
+{% block head %}
+	<h1>{{message}}</h1>
+	<h2>{{error.status}}</h2>
+	<pre> {{#{error.stack}}} </pre>
+{% endblock %} 
+
+{% block content %} 
+	This is just an awesomepage. 
 {% endblock %}
-
-
-
